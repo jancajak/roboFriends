@@ -8,7 +8,7 @@ import {
 export const setSearchField = (text) => ({
   type: CHANGE_SEARCH_FIELD,
   payload: text
-})
+});
 
 export const requestRobots = () => (dispatch) => {
   dispatch({ type: REQUEST_ROBOTS_PENDING });

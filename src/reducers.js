@@ -7,7 +7,7 @@ import {
 
 const initialStateSearch = {
   searchField: ''
-}
+};
 
 export const searchRobots = (state=initialStateSearch, action={}) => {
   switch (action.type) {
@@ -16,13 +16,13 @@ export const searchRobots = (state=initialStateSearch, action={}) => {
     default:
       return state;
   }
-}
+};
 
 const initialStateRobots = {
   isPending: false,
   robots: [],
   error: ''
-}
+};
 
 
 export const requestRobots = (state=initialStateRobots, action={}) => {
@@ -36,4 +36,4 @@ export const requestRobots = (state=initialStateRobots, action={}) => {
     default:
       return state;
   }
-}
+};

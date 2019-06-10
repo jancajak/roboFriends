@@ -11,5 +11,5 @@ it('expect to render CardList component', () => {
             email: 'john@gmail.com'
         }
     ]
-    expect(shallow(<CardList robots={mockRobots} />)).toMatchSnapshot();
+    expect(shallow(<CardList robots={mockRobots} />)).toMatchSnapshot('cardlist');
 })

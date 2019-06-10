@@ -2,7 +2,7 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import CardList from './CardList';
 
-it('expect to render CardList component', () => {
+it('expect to render CardList component', (done) => {
     const mockRobots = [
         {
             id:1,
@@ -12,4 +12,5 @@ it('expect to render CardList component', () => {
         }
     ]
     expect(shallow(<CardList robots={mockRobots} />)).toMatchSnapshot();
+    done();
 })
